@@ -1362,15 +1362,15 @@ ol {
   background-color: white;
 }
 .popup-form {
-  width: 100%;
+  width: 260px;
+  height: 50px;
   padding: 1.5rem 0;
   text-indent: 1rem;
   margin-bottom: 1.6rem;
-  border-radius: 3rem;
   background-color: black;
   color: white;
-  font-size: 1.8rem;
-  border: none;
+  
+  border: 2px solid white;
 }
 .popup-form::placeholder {
   color: white;
@@ -1392,7 +1392,7 @@ ol {
 }
 
 .right-content p {
-  font-size: 1.6rem;
+  font-size: 12px;
   color: #555;
   margin-bottom: 1.6rem;
 }
@@ -1445,11 +1445,27 @@ ol {
   border-radius: 1rem;
   object-fit: cover;
 }
-
+.popup-form-btn{
+  display: inline-block;
+  text-transform: capitalize;
+  font-size: 15px;
+  font-weight: 600;
+  padding: 13px 30px;
+  background-color: #ff6b81;
+  color: #fff;
+  border: none;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+  border-radius: 5px;
+  position: relative;
+  z-index: 1;
+  margin-right: 7px;
+  overflow: hidden;
+}
 .right-content a:link,
 .right-content a:visited {
-  display: inline-block;
-  padding: 1.8rem 5rem;
+  width: 60%;
+  height: 60%;
   border-radius: 3rem;
   font-weight: 700;
   color: white;
@@ -1468,6 +1484,95 @@ ol {
   transform: scale(0.2);
   opacity: 0;
   visibility: hidden;
+}
+
+@media only screen and (max-width: 1200px) {
+  .right-content {
+    width: 100%;
+  }
+
+  .right-content h1 {
+    font-size: 3.5rem;
+    margin-bottom: 1.3rem;
+  }
+}
+
+@media only screen and (max-width: 998px) {
+  .popup-right {
+    width: 100%;
+  }
+
+  .popup-left {
+    display: none;
+  }
+
+  .right-content h1 {
+    font-size: 5rem;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .right-content h1 {
+    font-size: 4rem;
+  }
+
+  .right-content p {
+    font-size: 1.6rem;
+  }
+
+  .popup-form {
+    width: 90%;
+    margin: 0 auto;
+    padding: 1.8rem 0;
+    margin-bottom: 1.5rem;
+  }
+
+  .goto-top:link,
+  .goto-top:visited {
+    right: 5%;
+    bottom: 5%;
+  }
+}
+
+@media only screen and (max-width: 568px) {
+  .popup-right {
+    padding: 0 1.6rem;
+  }
+
+  .popup-content {
+    height: 35rem;
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .right-content {
+    width: 100%;
+  }
+
+  .right-content h1 {
+    font-size: 3rem;
+  }
+
+  .right-content p {
+    font-size: 1.4rem;
+  }
+
+  .popup-form {
+    width: 100%;
+    padding: 1.5rem 0;
+    margin-bottom: 1.3rem;
+  }
+
+  .right-content a:link,
+  .right-content a:visited {
+    padding: 1.5rem 3rem;
+  }
+
+  .popup-close {
+    top: 1rem;
+    right: 1rem;
+    padding: 0.5rem;
+  }
 }
 
 
