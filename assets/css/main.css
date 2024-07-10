@@ -1367,7 +1367,7 @@ ol {
   text-indent: 1rem;
   margin-bottom: 1.6rem;
   border-radius: 3rem;
-  background-color: var(--green);
+  background-color: black;
   color: white;
   font-size: 1.8rem;
   border: none;
@@ -1382,7 +1382,7 @@ ol {
 }
 
 .right-content h1 {
-  font-size: 4rem;
+  font-size: 20px;
   color: #000;
   margin-bottom: 1.6rem;
 }
@@ -1432,14 +1432,15 @@ ol {
 }
 
 .popup-img-container {
-  width: 100%;
+  width: 140%;
+
   overflow: hidden;
 }
 
 .popup-img-container img.popup-img {
   display: block;
   width: 60rem;
-  height: 45rem;
+  height: 20rem;
   max-width: 100%;
   border-radius: 1rem;
   object-fit: cover;
@@ -1451,16 +1452,16 @@ ol {
   padding: 1.8rem 5rem;
   border-radius: 3rem;
   font-weight: 700;
-  color: var(--white);
-  background-color: var(--black);
-  border: 1px solid var(--grey2);
+  color: white;
+  background-color: black;
+  border: 1px solid white;
   transition: 0.3s;
 }
 
 .right-content a:hover {
-  background-color: var(--green);
-  border: 1px solid var(--grey2);
-  color: var(--black);
+  background-color: black;
+  border: 1px solid black;
+  color: black;
 }
 
 .hide-popup {
