@@ -111,8 +111,7 @@ Author: GrayGrids
         navbarToggler.classList.toggle("active");
     });
 
-
-    // Popup
+// Popup
 const popup = document.querySelector(".popup");
 const closePopup = document.querySelector(".popup-close");
 
@@ -127,6 +126,26 @@ if (popup) {
     }, 1000);
   });
 }
+
+//counter
+
+let number = 1; // Define number outside of the increment function to persist its value
+
+function increment() {
+    let secondo2Elements = document.querySelectorAll(".countup");
+    
+    secondo2Elements.forEach((element) => {
+        element.innerHTML = number;
+    });
+
+    number++; // Increment number after updating the HTML content
+}
+
+setInterval(increment, 200);
+
+
+
+
 
 
 })();
