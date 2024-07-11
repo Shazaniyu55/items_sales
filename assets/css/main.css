@@ -1491,6 +1491,8 @@ ol {
     width: 100%;
   }
 
+  
+
   .right-content h1 {
     font-size: 3.5rem;
     margin-bottom: 1.3rem;
@@ -1509,6 +1511,7 @@ ol {
   .right-content h1 {
     font-size: 5rem;
   }
+
 }
 
 @media only screen and (max-width: 768px) {
@@ -2486,7 +2489,7 @@ ol {
   line-height: 60px;
   text-align: center;
   display: inline-block;
-  background-color: #ff6b81;
+  background-color: red;
   color: #fff;
   font-size: 20px;
   border-radius: 7px;
@@ -2509,7 +2512,7 @@ ol {
     Our Achievement CSS
 ========================================*/
 .our-achievement {
-  background-color: #ff6b81;
+  background-color: #000000;
   text-align: center;
   padding: 130px 0;
 }
@@ -2685,7 +2688,7 @@ ol {
     Call To Action CSS
 ========================================*/
 .call-action {
-  background-color: #ff6b81;
+  background-color: red;
 }
 
 .call-action .cta-content {
