@@ -130,6 +130,7 @@ if (popup) {
 //counter
 
 let number = 1; // Define number outside of the increment function to persist its value
+const stopValue = 1000; // Set the value at which the counter should stop
 
 function increment() {
     let secondo2Elements = document.querySelectorAll(".countup");
@@ -138,10 +139,14 @@ function increment() {
         element.innerHTML = number;
     });
 
+    if (number === stopValue) {
+        clearInterval(intervalId); // Stop the interval
+    }
+
     number++; // Increment number after updating the HTML content
 }
 
-setInterval(increment, 200);
+setInterval(increment, 700);
 
 
 
